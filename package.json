@@ -1,0 +1,32 @@
+{
+  "name": "meterlog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint .",
+    "test:e2e": "playwright test",
+    "check": "svelte-check --threshold error"
+  },
+  "dependencies": {
+    "svelte": "5.57.2",
+    "idb": "^8.0.3"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "eslint": "^9.39.0",
+    "globals": "^16.5.0",
+    "@playwright/test": "1.64.1",
+    "@axe-core/playwright": "^4.11.1",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "eslint-plugin-svelte": "latest",
+    "svelte-check": "latest"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
